@@ -42,14 +42,12 @@ body {
   flex-direction: column;
   gap: 5px;
 }
-/* box-shadow: 0 0 5px rgba(0,0,0,0.3); */
 
 .buttons-calc .card {
-  /* background: green; */
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  gap: 10px;
+  gap: 15px;
+  height: 100px;
 }
 
 .buttons-calc button {
@@ -69,6 +67,9 @@ body {
   width: 74%;
 }
 
+.card #equal {
+  height: 204px;
+}
 .card-diferent #zero {
   width: 215px;
 }
