@@ -1,5 +1,6 @@
 const buttons = document.querySelectorAll('button');
 const screen = document.querySelector('#screen')
+let numbers = []
 
 buttons.forEach((e, i) => {
     e.addEventListener('click', (e) => {
@@ -8,6 +9,8 @@ buttons.forEach((e, i) => {
             events(e);
         } else {
             screen.innerText += e.target.innerText
+            numbers.push(e.target.innerText)
+            console.log(numbers)
         }
 
 
@@ -15,6 +18,7 @@ buttons.forEach((e, i) => {
     })
 
 })
+
 
 
 function events(element) {
