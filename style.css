@@ -13,29 +13,26 @@ body {
 }
 
 .container-calc {
-  width: 500px;
-  height: 700px;
+  width: 420px;
+  height: 500px;
   background: #000;
 }
 
 .container-calc .screen {
   width: 90%;
-  /* background: red; */
-  margin: auto;
   padding: 30px 0px;
+  margin: auto;
 }
 
 .container-calc .screen p {
   width: 100%;
-  height: 80px;
   background: #fff;
-  font-size: 60px;
+  font-size: 30px;
   text-align: end;
-  padding: 5px;
+  padding: 10px;
 }
 
 .buttons-calc {
-  /* background: red; */
   width: 90%;
   margin: auto;
   display: flex;
@@ -45,31 +42,36 @@ body {
 
 .buttons-calc .card {
   display: flex;
-  justify-content: space-between;
-  gap: 15px;
-  height: 100px;
+  height: 70px;
+  gap: 5px;
 }
 
 .buttons-calc button {
-  width: 100px;
-  height: 100px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  background: #181717;
+  width: 90px;
+  height: 70px;
+  border: none;
   color: #fff;
+  background: #181717;
   font-weight: 700;
   font-size: 20px;
   cursor: pointer;
+  transition: all 150ms ease;
+}
+
+.buttons-calc button:active {
+  transform: scale(0.95);
 }
 
 .buttons-calc .card-diferent {
   display: flex;
-  justify-content: space-between;
-  width: 74%;
+  gap: 5px;
+  width: 280px;
+}
+
+.card-diferent #zero {
+  width: 185px;
 }
 
 .card #equal {
-  height: 204px;
-}
-.card-diferent #zero {
-  width: 215px;
+  height: 145px;
 }
